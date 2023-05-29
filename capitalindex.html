@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function capital_indexes(str) {
+      let capLetters = [];
+      for (let i = 0; i < str.length; i++) {
+        //check the character in the index, uppercase or not
+        if (str[i] === str[i].toUpperCase()) {
+          capLetters.push(i);
+        }
+      }
+      return capLetters; //return the list of index with uppercase
+    }
+    let result = capital_indexes("HeLlO");
+    document.write(result);
+  </script>
+</html>

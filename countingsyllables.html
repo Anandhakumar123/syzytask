@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function count(str) {
+      // divide the str into seperate syllables by split.
+      const syllables = str.split("-");
+
+      // Count the number of syllables.
+      let syllableCount = 0;
+      for (const syllable of syllables) {
+        if (syllable.length > 0) {
+          syllableCount++;
+        }
+        //  else {
+        //   return "No syllables";
+        // }
+      }
+
+      // Return the number of syllables.
+      return syllableCount;
+    }
+    document.write(count("ho-tel") + "<br>");
+    document.write(count("cat") + "<br>");
+    document.write(count("met-a-phor") + "<br>");
+    document.write(count("ter-min-a-tor") + "<br>");
+    // document.write(count("") + "<br>");
+  </script>
+</html>

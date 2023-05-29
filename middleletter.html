@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function mid(txt) {
+      //assign length of given string to "len" variable
+      var len = txt.length;
+      //if length is not equal it will return mid letter otherwise return empty string
+      if (len % 2 != 0) {
+        let start = (len - 1) / 2;
+        //.slice(start, end) method to slice from given parameter
+        return txt.slice(start, start + 1);
+      } else {
+        //here ruturn empty string
+        return "";
+      }
+    }
+    document.write("Middle letter of the string is : " + mid("abc") + "<br>");
+    document.write("Middle letter of the string is : " + mid("aaaa") + "<br");
+  </script>
+</html>
